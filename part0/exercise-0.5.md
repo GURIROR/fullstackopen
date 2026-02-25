@@ -18,11 +18,11 @@ sequenceDiagram
     server-->>browser: JavaScript file (SPA logic)
     deactivate server
 
-    Note right of browser: Browser executes spa.js, which fetches notes as JSON
+    Note right of browser: Browser executes spa.js and fetches notes data
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate server
     server-->>browser: JSON list of notes
     deactivate server
 
-    Note right of browser: Browser renders notes without reloading the page
+    Note right of browser: Browser renders notes (no full page reload)
